@@ -1,2 +1,16 @@
-# GNN
-Harnessing Graph Neural Networks for Enhanced Accuracy in Sales Forecasting
+# Harnessing Graph Neural Networks for Enhanced Accuracy in Sales Forecasting
+Accurate sales is essential to forecast for retail management, staffing levels, and marketing strategies. The application of machine learning (ML) to sales forecasting has become increasingly popular. Deep learning enables companies to examine past data, spot trends, and project future sales trends with confidence. This study presents a robust methodology for sales forecasting using the Favourite Grocery dataset, leveraging advanced feature engineering and deep learning models to tackle complex time-series challenges. The data preparation process incorporates grouping by date, sliding windows, and standardized scaling, ensuring effective sequential analysis. Two models were developed: a Graph Neural Network (GNN) with CNN layers, and a Hybrid CNN-LSTM-GRU model enhanced with Multi-Head Attention
+# Objectives:
+To gather and prepare the Corporación Favourite Grocery Sales Forecasting and Kaggle dataset.
+
+To create and put into practice solid plans for handling missing data in GNN models.
+
+To locate and examine important dataset properties that have a major impact on prediction accuracy.
+
+To develop and use efficient evaluation metrics for GNN models, including RMSLE and RMALE.
+# Overview of dataset
+The Favorita Grocery Sales Forecasting dataset is a valuable source for the unit sales of a host of products in Favorita stores in Ecuador, The training data range is from March 1, 2017, to June 21, 2017, and the validation data range is from June 28, 2017, to July 13, 2017, and testing data range is from July 19, 2017, to July 23. It further contains basic variables like date, store_nbr, item_nbr, promotion status and the target variable, which is unit_sales in addition to metadata about stores and items, further detailed by relevant attributes like city, state, type and cluster about stores and respectively family, class and perishability about items., oils_prices, holidays and transactions
+# Methodology 
+The proposed method for sales forecasting first collected Corporación Favorita Grocery Sales Forecasting dataset Kaggle. After that, the process begins with data pre-processing, which includes loading relevant datasets, converting date columns to date-time format, forward-filling missing oil price values, date range filtering, merging datasets and Resulting Dataset Shapes. Then Exploratory Data Analysis (EDA) is conducted to inspect data types, summarise statistics, and analyse time series trends. Features are engineered through sliding window creation, standardisation. Two deep learning models are developed: a Graph Neural Network (GNN) with CNN layers and Multi-Head Attention and a Hybrid CNN-LSTM-GRU model, both trained using Adam optimiser with MSE loss. Evaluation metrics like RMSLE and RMALE assess performance, with the GNN model slightly outperforming the Hybrid model in accuracy and error reduction. Predictions for the next 7 days are visualised, highlighting the effectiveness of the proposed models in addressing the forecasting challenges. 
+# Result
+The GNN with CNN layers outperformed the Hybrid model in terms of RMSLE (0.257 vs 0.2654) and RMALE (0.383 vs 0.393)
